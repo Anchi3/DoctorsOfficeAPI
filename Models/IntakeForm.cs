@@ -13,10 +13,10 @@ public class IntakeForm
 
     [ForeignKey("DoctorId")]
     public int DoctorId { get; set; }
-    //public Doctor Doctor { get; set; }
+    public Doctor Doctor { get; set; }
 
     [ForeignKey("PatientId")]
     public int PatientId { get; set; }
-    //public Patient Patient { get; set; }
+    public Patient Patient { get; set; }
 
 }

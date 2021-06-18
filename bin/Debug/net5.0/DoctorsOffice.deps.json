@@ -34,7 +34,6 @@
       "DoctorsOffice/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.0-preview.5.21301.9",
-          "Microsoft.EntityFrameworkCore.Design": "6.0.0-preview.5.21301.9",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.0-preview.5.21301.9",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.0-preview.5.21301.9",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.0-preview.4",

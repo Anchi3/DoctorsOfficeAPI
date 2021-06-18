@@ -946,7 +946,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.0-preview.5.21301.9",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.0-preview.5.21301.9",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.0-preview.5.21301.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0-preview.5.21301.9",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.0-preview.4",
@@ -1001,12 +1000,6 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.0-preview.5.21301.9, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.0-preview.5.21301.9, )"
           },

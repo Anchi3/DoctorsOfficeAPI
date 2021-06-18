@@ -34,17 +34,16 @@ namespace DoctorsOffice
             });
 
             services.AddCors(options =>
-           {
-               options.AddPolicy("MyCORS",
-                   builder =>
-                   {
-                       builder
-                       .AllowAnyOrigin()
-                       .AllowAnyHeader()
-                       .AllowAnyMethod();
-                   });
-           });
-
+            {
+                options.AddPolicy("MyCORS",
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
