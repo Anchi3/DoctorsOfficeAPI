@@ -67,8 +67,5 @@ namespace DoctorsOffice.Controllers
                 _context.SaveChanges();
             }
         }
-
-
-
     }
 }

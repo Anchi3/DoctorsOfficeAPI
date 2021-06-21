@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +20,6 @@ namespace DoctorsOffice.Controllers
             _logger = logger;
         }
 
-
         [HttpGet]
         public IEnumerable<IntakeForm> Get()
         {
@@ -31,7 +29,10 @@ namespace DoctorsOffice.Controllers
         [HttpPost]
         public void Post([FromBody] IntakeForm value)
         {
-            int id = _context.IntakeForms.Max(p => p.Id) + 1;
+            int id = 1;
+
+            if (_context.IntakeForms.ToList().Count != 0)
+                id = _context.IntakeForms.Max(p => p.Id) + 1;
 
             IntakeForm newIntakeForm = new IntakeForm
             {
